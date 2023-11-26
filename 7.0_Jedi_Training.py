@@ -52,12 +52,8 @@ b = y / 13
 for i in range(7):
     arcade.draw_rectangle_filled(x/2, a, x, b, (191, 10, 48), 0)
     a = a + (2*(y/13))
-c = y*(7/13)
-d = y * 0.76
-arcade.draw_rectangle_filled(y-d, y, d, c, (0, 40, 104), 0)
-h = y * 0.063
-e = y * 0.054
+arcade.draw_rectangle_filled(98, 190, y*0.76, y*(7/13), (0, 40, 104))
 for i in range(1):
-    arcade.draw_text("*",h,e, arcade.color.WHITE, 20)
+    arcade.draw_text("*",0,0, arcade.color.WHITE, 20)
 arcade.finish_render()
 arcade.run()

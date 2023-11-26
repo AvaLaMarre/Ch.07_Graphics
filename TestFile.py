@@ -5,7 +5,7 @@ arcade.start_render()
 x = 200
 y = 200
 for i in range(2):
-    arcade.draw_line(x, 0 ,x, 600, arcade.color.BLACK)
+    arcade.draw_line(x, 0, x, 600, arcade.color.BLACK)
     arcade.draw_line(0, y, 600, y, arcade.color.BLACK)
     x += 200
     y += 200
@@ -37,11 +37,11 @@ x = 210
 y = 190
 for i in range(19):
     x = 210
-    for i in range(19):
+    for z in range(19):
         arcade.draw_point(x, y, arcade.color.NEON_GREEN, 2)
         x += 10
     y -= 10
 "BOTTOM RIGHT SQUARE"
-arcade.draw_text("Ava LaMarre", 455,100, arcade.color.BLACK,12)
+arcade.draw_text("Ava LaMarre", 455, 100, arcade.color.BLACK, 12)
 arcade.finish_render()
 arcade.run()
