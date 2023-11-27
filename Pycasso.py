@@ -19,11 +19,9 @@ arcade.open_window(600, 600, "AVA LAMARRE", )
 arcade.set_background_color(arcade.color.DARK_PASTEL_BLUE)
 arcade.start_render()
 
-
 "BODY"
-arcade.draw_circle_filled(300, 300, 120, (30, 15, 6))
-arcade.draw_circle_filled(300, 200, 180, (30, 15, 6))
-"arcade.draw_circle_filled(300, 370, 80, (0, 0, 0))"
+arcade.draw_circle_filled(300, 350, 120, (30, 15, 6))
+arcade.draw_circle_filled(300, 220, 200, (30, 15, 6))
 arcade.draw_triangle_filled(250, 400, 350, 400, 300, 250, (0, 0, 0))
 
 "HEAD"
@@ -69,7 +67,7 @@ tableLinetwo = 200
 for i in range(5):
     arcade.draw_line(0, tableLine, 600, tableLine, (70, 38, 5), 3)
     tableLine -= 40
-    for q in range(3):
+    for q in range(7):
         arcade.draw_line(0, tableLinetwo, 600, tableLinetwo, (97, 58, 25))
         tableLinetwo -= 6
 "CAKE"
@@ -99,8 +97,27 @@ for i in range(5):
     candleRightX -= 20
     candleY -= 7
 "HAT"
-arcade.draw_circle_filled(300, 502, 25, arcade.color.PALE_PLUM)
-arcade.draw_triangle_filled(274, 498, 326, 498, 300, 570, arcade.color.PALE_PLUM)
+arcade.draw_triangle_filled(265, 495, 335, 495, 300, 580, arcade.color.GOLD)
+arcade.draw_triangle_filled(265, 495, 275, 520, 335, 495, arcade.color.PINK_SHERBET)
+arcade.draw_triangle_filled(283, 540, 292, 560, 330, 510, arcade.color.PINK_SHERBET)
+"TEXT"
+arcade.draw_text("BEAR", 25, 550, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("I", 30, 520, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("R", 25, 490, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("T", 25, 460, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("H", 25, 430, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("D", 25, 400, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("A", 25, 370, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("Y", 25, 340, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+
+arcade.draw_text("RAEB",470, 550, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("I", 555, 520, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("R", 550, 490, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("T", 550, 460, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("H", 550, 430, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("D", 550, 400, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("A", 550, 370, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("Y", 550, 340, arcade.color.BLACK, 30, 0,"left", "Times new roman")
 
 "END"
 arcade.finish_render()
