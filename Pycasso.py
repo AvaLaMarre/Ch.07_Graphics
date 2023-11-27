@@ -46,7 +46,7 @@ arcade.draw_circle_filled(300, 352, 10, (0, 0, 0))
 arcade.draw_triangle_filled(290, 350, 310, 350, 300, 335, (0, 0, 0))
 "Head shape change "
 arcade.draw_rectangle_filled(205, 480, 40, 100, arcade.color.DARK_PASTEL_BLUE, 25)
-arcade.draw_circle_filled(235.5, 477.5, 22.5, (30, 15, 6))
+arcade.draw_circle_filled(236, 477.5, 22.5, (30, 15, 6))
 arcade.draw_rectangle_filled(395, 480, 40, 100, arcade.color.DARK_PASTEL_BLUE, 335)
 arcade.draw_circle_filled(364, 477.5, 22.5, (30, 15, 6))
 "EARS"
@@ -62,12 +62,46 @@ arcade.draw_circle_filled(250, 450, 10, arcade.color.WHITE)
 arcade.draw_circle_filled(350, 450, 10, arcade.color.WHITE)
 arcade.draw_circle_filled(249, 450, 8, arcade.color.BLACK)
 arcade.draw_circle_filled(351, 450, 8, arcade.color.BLACK)
-""
+"TABLE"
 arcade.draw_rectangle_filled(300, 100, 600, 200, arcade.color.BROWN_NOSE)
-
-""
+tableLine = 200
+tableLinetwo = 200
+for i in range(5):
+    arcade.draw_line(0, tableLine, 600, tableLine, (70, 38, 5), 3)
+    tableLine -= 40
+    for q in range(3):
+        arcade.draw_line(0, tableLinetwo, 600, tableLinetwo, (97, 58, 25))
+        tableLinetwo -= 6
+"CAKE"
+y = 100
+for i in range(4):
+    arcade.draw_ellipse_filled(300, y, 200, 100, arcade.color.PINK)
+    y += 10
+    arcade.draw_ellipse_filled(300, y, 200, 100, arcade.color.WHITE)
+    y += 10
+arcade.draw_ellipse_filled(300, y, 200, 100, arcade.color.PINK)
+candleLeftX = 210
+candleRightX = 390
+candleY = 195
+for i in range(5):
+    arcade.draw_line( candleLeftX, candleY, candleLeftX, candleY + 30, arcade.color.GOLD, 4)
+    candleLeftX += 20
+    arcade.draw_line(candleRightX, candleY, candleRightX, candleY + 30, arcade.color.GOLD, 4)
+    candleRightX -= 20
+    candleY += 7
+candleLeftX = 210
+candleRightX = 390
+candleY = 165
+for i in range(5):
+    arcade.draw_line(candleLeftX, candleY, candleLeftX, candleY + 30, arcade.color.YELLOW, 4)
+    candleLeftX += 20
+    arcade.draw_line(candleRightX, candleY, candleRightX, candleY + 30, arcade.color.YELLOW, 4)
+    candleRightX -= 20
+    candleY -= 7
+"HAT"
 arcade.draw_circle_filled(300, 502, 25, arcade.color.PALE_PLUM)
 arcade.draw_triangle_filled(274, 498, 326, 498, 300, 570, arcade.color.PALE_PLUM)
-arcade.draw_line(274,498, 300, 570, arcade.color.PALE_PLUM, 5)
+
+"END"
 arcade.finish_render()
 arcade.run()
