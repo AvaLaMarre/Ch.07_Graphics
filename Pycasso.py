@@ -1,4 +1,4 @@
-'''
+"""
 PYCASSO PROJECT (4pts)
 ---------------
 Your job is to make a cool picture.
@@ -6,14 +6,14 @@ You must use multiple colors.
 You must have a coherent picture. No abstract art with random shapes.
 You must use multiple types of graphic functions (e.g. circles, rectangles, lines, etc.)
 Somewhere you must include a WHILE or FOR loop to create a repeating pattern.
-Do not just redraw the same thing in the same location 10 times. 
+Do not just redraw the same thing in the same location 10 times.
 You can contain multiple drawing commands in a loop, so you can draw multiple train cars for example.
-Please use comments and blank lines to make it easy to follow your program. 
-If you have 5 lines that draw a robot, group them together with blank lines above and below. 
+Please use comments and blank lines to make it easy to follow your program.
+If you have 5 lines that draw a robot, group them together with blank lines above and below.
 Then add a comment at the top telling the reader what you are drawing.
 IN THE WINDOW TITLE PLEASE PUT YOUR NAME.
 When you are finished Upload both your code and a screenshot of your art.
-'''
+"""
 import arcade
 arcade.open_window(600, 600, "AVA LAMARRE", )
 arcade.set_background_color(arcade.color.DARK_PASTEL_BLUE)
@@ -82,7 +82,7 @@ candleLeftX = 210
 candleRightX = 390
 candleY = 195
 for i in range(5):
-    arcade.draw_line( candleLeftX, candleY, candleLeftX, candleY + 30, arcade.color.GOLD, 4)
+    arcade.draw_line(candleLeftX, candleY, candleLeftX, candleY + 30, arcade.color.GOLD, 4)
     candleLeftX += 20
     arcade.draw_line(candleRightX, candleY, candleRightX, candleY + 30, arcade.color.GOLD, 4)
     candleRightX -= 20
@@ -101,23 +101,23 @@ arcade.draw_triangle_filled(265, 495, 335, 495, 300, 580, arcade.color.GOLD)
 arcade.draw_triangle_filled(265, 495, 275, 520, 335, 495, arcade.color.PINK_SHERBET)
 arcade.draw_triangle_filled(283, 540, 292, 560, 330, 510, arcade.color.PINK_SHERBET)
 "TEXT"
-arcade.draw_text("BEAR", 25, 550, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("I", 30, 520, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("R", 25, 490, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("T", 25, 460, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("H", 25, 430, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("D", 25, 400, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("A", 25, 370, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("Y", 25, 340, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("BEAR", 25, 550, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("I", 30, 520, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("R", 25, 490, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("T", 25, 460, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("H", 25, 430, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("D", 25, 400, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("A", 25, 370, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("Y", 25, 340, arcade.color.BLACK, 30, 0, "left", "Times new roman")
 
-arcade.draw_text("RAEB",470, 550, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("I", 555, 520, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("R", 550, 490, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("T", 550, 460, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("H", 550, 430, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("D", 550, 400, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("A", 550, 370, arcade.color.BLACK, 30, 0,"left", "Times new roman")
-arcade.draw_text("Y", 550, 340, arcade.color.BLACK, 30, 0,"left", "Times new roman")
+arcade.draw_text("RAEB", 470, 550, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("I", 555, 520, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("R", 550, 490, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("T", 550, 460, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("H", 550, 430, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("D", 550, 400, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("A", 550, 370, arcade.color.BLACK, 30, 0, "left", "Times new roman")
+arcade.draw_text("Y", 550, 340, arcade.color.BLACK, 30, 0, "left", "Times new roman")
 
 "END"
 arcade.finish_render()
